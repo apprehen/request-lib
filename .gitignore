@@ -1,2 +1,8 @@
 /node_modules
 /dist
+pnpm-lock.yaml
+/packages/*/node_modules
+/packages/*/dist
+/packages/*/pnpm-lock.yaml
+/.rollup.cache
+/tsconfig.tsbuildinfo

@@ -1,5 +1,5 @@
 {
-  "name": "request-fetch-imp",
+  "name": "request-core",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.cjs.js",

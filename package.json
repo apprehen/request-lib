@@ -2,17 +2,21 @@
   "name": "request-lib",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./packages"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./packages ",
+    "build": "rollup -c"
   },
   "keywords": [],
   "author": "yueyun",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -24,7 +28,11 @@
     "husky": "^8.0.0",
     "prettier": "^3.3.3",
     "rollup": "^4.20.0",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
